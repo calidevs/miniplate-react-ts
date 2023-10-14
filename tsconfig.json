@@ -20,14 +20,11 @@
     "jsx": "react-jsx",
 
     // modules
-
-    // paths
     "baseUrl": "src/",
     "paths": {
-      "Components/*": ["components/*"],
+      "Components/*": ["Components/*"],
     },
-
-    // Linting
+    
     "strict": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
@@ -36,6 +33,6 @@
     "forceConsistentCasingInFileNames": true,
     
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules"]
 }

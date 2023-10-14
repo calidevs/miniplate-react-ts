@@ -26,6 +26,9 @@ module.exports = {
     }),
   ],
   resolve: {
+    alias: {
+      Components: paths.Components,
+    },
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
