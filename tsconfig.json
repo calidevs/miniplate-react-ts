@@ -20,14 +20,11 @@
     "jsx": "react-jsx",
 
     // modules
-
-    // paths
-    "baseUrl": "src/",
+    "baseUrl": "src/",                                   /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "Components/*": ["components/*"],
     },
-
-    // Linting
+    
     "strict": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
