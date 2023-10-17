@@ -27,7 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "chmod +x ./husky/commit-msg && bash ./husky/commit-msg"
+      "commit-msg": "bash ./husky/commit-msg"
     }
   }
 }

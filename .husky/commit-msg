@@ -2,13 +2,8 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # The commit message, passed as an argument to this script
-# commit_message=$(cat "$1")
-commit_message_file=$(cat "$1")
 
-# if [[ "$commit_message" == '' ]];then
-#     echo "msg is empty"
-#     exit 1
-# fi
+commit_message_file=$(cat "$1")
 
 # Define the regex for the Conventional Commit format
 
