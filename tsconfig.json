@@ -33,8 +33,7 @@
     "noFallthroughCasesInSwitch": true,
 
     // Interop constrains
-    "forceConsistentCasingInFileNames": true,
-    
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
