@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+. "$(dirname -- "$0")/_/husky.sh"
+
+# The commit message, passed as an argument to this script
+
+commit_message_file=$(cat "$1")
+
+# Define the regex for the Conventional Commit format
+
+commit_regex='^(build|ci|docs|feat|fix|perf|refactor|style|test|chore)(\(.+\))?: .{1,50}(\n\n.+)?'
+
+if [[ ! ${commit_message_file} =~ ${commit_regex} ]]; then
+    
+    echo "ERROR: The commit message does not follow the conventional commit format e.g. 'type(scope): subject'"
+
+    exit 1
+
+else
+
+	echo "valid commit"
+
+fi
+exit 0
+
+
