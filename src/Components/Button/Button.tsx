@@ -6,7 +6,9 @@ import {
 type ButtonProps = MuiButtonProps;
 
 const Button = ({ children, ...props }: ButtonProps) => (
-  <MuiButton {...props}>{children}</MuiButton>
+  <MuiButton {...props} fullWidth>
+    {children}
+  </MuiButton>
 );
 
 export default Button;
