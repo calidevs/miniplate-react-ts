@@ -1,30 +1,8 @@
-import { useState } from "react";
+import Login from "./Pages/Login/Login";
 import "./App.css";
-import { Button } from "Components/Button";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <h1>React</h1>
-
-      <h2>There</h2>
-      <div className="card">
-        <Button
-          variant="contained"
-          color="info"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the React logos to learn more</p>
-    </>
-  );
+  return <Login />;
 }
 
 export default App;
